@@ -17,7 +17,7 @@ embarked = st.selectbox('Port of Embarkation', ['Southampton', 'Cherbourg', 'Que
 sex = 0 if sex == 'Male' else 1
 embarked = {'Southampton': 0, 'Cherbourg': 1, 'Queenstown': 2}[embarked]
 
-features = pd.sidebar.DataFrame({
+features = pd.DataFrame({
  'pclass': [pclass],
  'sex': [sex],
  'age': [age],
