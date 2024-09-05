@@ -26,7 +26,7 @@ features = pd.DataFrame({
 })
 
 if st.button('Predict'):
-    prediction = model.predict(features)[pclass,sex,age,fare,embarked]
+    prediction = model.predict(features)
     result = 'Survived' if prediction == 1 else 'Not Survived'
     st.write(f'The model predicts: {result}')
 st.write("Developed by Jay Patel")
